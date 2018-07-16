@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Testidy - Eduardo Ortiz</title>
+    <meta name="description" content="Portafolio de proyectos de Eduardo Ortiz Muñoz">
+    <meta name="author" content="Eduardo Ortiz Muñoz">
+
+    <link rel="stylesheet" href="../css/bulma.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar is-black">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">          
+              <img src="../images/languages/home.png" alt="" style="height:20px">&nbsp;Inicio
+            </a>
+            <a style="position:absolute; right:75px;" class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">
+              <img style="margin-top:5px" src="../images/languages/mexico.png" alt="">&nbsp;<span style="margin-top:3px">ES</span>
+            </a>
+            <a style="position:absolute; right:0px;" class="navbar-item" href="https://eduardo-ortiz.github.io/Portfolio/">
+              <img style="margin-top:5px" src="../images/languages/usa.png" alt="">&nbsp;<span style="margin-top:3px">EN</span>
+            </a>    
+        </div>
+    </nav>
+    <div style="margin-top:20px" class="container">
+        <div class="logo">
+            <img class="img-logo" src="../images/testidy/logo.png" width="150px"/><br>
+            <span style="font-size:20px;font-weight:600">Control Escolar Mejorado</span>
+        </div>     
+      
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-12-mobile is-6-tablet is-6-desktop">
+                <p style="padding-bottom:6px;padding-top:6px">
+                    <b>Testidy es una plataforma que facilita el control escolar, principalmente la asistencia. Para eso se
+                        utilizan códigos QR</b> en las aulas que posteriormente son escaneados por los alumnos para confirmar
+                    que están dentro de la clase.</p>
+                <p style="padding-bottom:6px;">Además de esto se incluyen otras funciones adicionales que son útiles para una institución educativa, que
+                    incluyen horarios, practicas, avisos, etc. A continuación se listan las principales características del
+                    proyecto:</p>
+                <ul>
+                    <li>
+                        <strong>aplicación web</strong>, con funciones como:
+                        <ul>
+                            <li>accesos separados para alumnos, maestros y administradores;</li>
+                            <li>registro de laboratorios con generación automática de códigos QR;</li>
+                            <li>función para pase de asistencia durante la hora de clase;</li>
+                            <li>generación de reportes de asistencia en tiempo real;</li>
+                            <li>horarios con detalles para conocer qué clase se lleva a cabo, bajo qué materia, en qué lugar
+                                y con qué maestro;</li>
+                            <li>notificaciones
+                                <i>push</i> para enviar avisos a alumnos específicos, grupos o a toda la escuela;</li>
+                            <li>sistema de exámenes integrado para realizar prácticas durante la hora clase;</li>
+                            <li>… y algunas funciones extra como separar aulas, almacenamiento de archivos, importación de alumnos
+                                y maestros a través de .csv, entre otras.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>aplicación móvil para Android</strong>, con funciones que incluyen:
+                        <ul>
+                            <li>escaneo de códigos QR para confirmar asistencia a clases;</li>
+                            <li>acceso directo a la página web de la escuela;</li>
+                            <li>función para solicitar aulas en cualquier fecha y hora disponible;</li>
+                            <li>historial para consultar avisos y notificaciones recibidas.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="column is-12-mobile is-6-tablet is-6-desktop has-border">
+                <span class="detail-title">Explicación Técnica</span>
+                <br>
+                <span class="detail-subtitle">Aplicación Web</span>
+                <br>
+                <ul>
+                    <li>ASP.NET con C#
+                    </li>
+                    <li>Sirve para 3 propósitos:
+                        <ul class="sec-ul">
+                            <li>como una aplicación web para alumnos y maestros,</li>
+                            <li>como API para la aplicación móvil,</li>
+                            <li>como panel de administrador.</li>
+                        </ul>
+                    </li>
+                    <li>Conexión con Firebase para enviar notificaciones push.
+                    </li>
+                    <li>Integración con jQuery para widget de selector de fechas y filtros de búsqueda con las funciones de autocompletar.
+                    </li>
+                    <li>Servicios Web ASMX para distintas funciones.
+                    </li>
+                    <li>Base de datos en SQL Server.
+                    </li>
+
+                </ul>
+                <span class="detail-subtitle">Aplicación Móvil</span>
+                <br>
+                <ul>
+                    <li>Aplicación nativa desarrollada con Android Studio
+                    </li>
+                    <li>Lector de códigos QR integrado dentro de la aplicación.
+                    </li>
+                    <li>Integración fon Firebase para recibir notificaciones push.
+                    </li>
+                    <li>Comunicación con el servidor a través de SOAP.
+                    </li>
+                </ul>
+                <span class="detail-subtitle">Tecnologías Utilizadas</span>
+                <br>
+                <div style="margin-top:5px">
+                    <img src="../images/tech/aspnet.png" width="75px">
+                    <img src="../images/tech/jquery.png" width="75px">
+                    <img src="../images/tech/sqlserver.png" width="75px">
+                    <img src="../images/tech/androidstudio.png" width="75px">
+                    <img src="../images/tech/firebase.png" width="75px">
+                </div>
+            </div>
+        </div>
+        <div class="has-text-centered">
+            <span class="detail-title">Imagenes del Proyecto:</span>
+            <br>
+        </div>
+        <div class="slider" style="max-width:700px">
+            <img class="mySlides animation" src="../images/testidy/screenshots/1.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/2.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/3.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/4.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/5.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/6.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/7.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/8.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/9.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/10.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/11.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/12.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/13.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/14.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/15.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/16.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/17.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/18.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/19.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/testidy/screenshots/20.jpg" style="width:100%">
+            <div class="left slider-arrow" onclick="plusDivs(-1); resetTimer()">&#10094;</div>
+            <div class="right slider-arrow" onclick="plusDivs(1); resetTimer()">&#10095;</div>
+
+            <div class="badges-container" style="width:100%">
+                <span class="badge" onclick="currentDiv(1); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(2); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(3); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(4); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(5); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(6); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(7); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(8); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(9); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(10); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(11); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(12); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(13); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(14); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(15); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(16); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(17); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(18); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(19); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(20); resetTimer()"></span>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="has-text-centered" style="margin-bottom:23px">
+            <h3 class="title is-5">Contacto: &nbsp;&nbsp;<img width="20px" src="../images/tech/gmail.png"></img> <i><a href="mailto:eduort11@gmail.com">eduort11@gmail.com</a><br> </i></h3> 
+    </div>
+
+    <script src="../js/slider.js"></script>
+
+</body>
+
+</html>

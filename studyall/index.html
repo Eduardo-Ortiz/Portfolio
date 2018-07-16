@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Studyall - Eduardo Ortiz</title>
+    <meta name="description" content="Portafolio de proyectos de Eduardo Ortiz Muñoz">
+    <meta name="author" content="Eduardo Ortiz Muñoz">
+
+    <link rel="stylesheet" href="../css/bulma.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar is-black">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">          
+              <img src="../images/languages/home.png" alt="" style="height:20px">&nbsp;Inicio
+            </a>
+            <a style="position:absolute; right:75px;" class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">
+              <img style="margin-top:5px" src="../images/languages/mexico.png" alt="">&nbsp;<span style="margin-top:3px">ES</span>
+            </a>
+            <a style="position:absolute; right:0px;" class="navbar-item" href="https://eduardo-ortiz.github.io/Portfolio/">
+              <img style="margin-top:5px" src="../images/languages/usa.png" alt="">&nbsp;<span style="margin-top:3px">EN</span>
+            </a>    
+        </div>
+    </nav>
+    <div style="margin-top:20px" class="container">
+        <div class="logo">
+            <img class="img-logo" src="../images/studyall/logo.png" width="150px"/><br>
+            <span style="font-size:20px;font-weight:600">Plataforma de Contenidos</span>
+        </div>     
+      
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-12-mobile is-6-tablet is-6-desktop">
+                <p style="padding-bottom:6px;padding-top:6px">Studyall es una plataforma diseñada para la <b>administración de contenidos de aprendizaje, los cuales pueden ser distribuidos a través de paquetes</b> para que los usuarios descarguen solo aquello que necesitan.</p>
+                <p style="padding-bottom:6px;">Estos paquetes incluyen textos, preguntas, exámenes y herramientas los cuales pueden ser creados desde el panel de administrador para ser distribuidos a los usuarios de la app móvil. Además se incluye un chatbot que puede enseñar acerca de diversos contenidos.</p>
+                <ul>
+                    <li>
+                        <strong>aplicación web</strong>, con funciones como:
+                        <ul>
+                            <li>administración de las materias/tópicos que están disponibles para descargar en la aplicación móvil con función para notificar actualizaciones;</li>      
+                            <li>carga de contenidos (incluyendo preguntas, textos, exámenes);</li>    
+                            <li>interface para entrenar al chatbot en diversos temas;</li>    
+                            <li>sincronización con la app a través de código QR. para visualizar cualquier contenido en un navegador de PC (Studyall <i>Link</i>);</li>                                      
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>aplicación móvil para Android</strong>, con funciones que incluyen:
+                        <ul>
+                            <li>función para descargar materias/tópicos que están disponibles en el servidor;</li>
+                            <li>notificaciones cuando una materia instalada es actualizada en el servidor, para mantenerse al día los nuevos contenidos agregados o editados.</li>
+                            <li>visualizador de contenidos de texto con imágenes;</li>
+                            <li>visualizador de preguntas con funciones para marcar favoritos;</li>
+                            <li>exámenes a partir de las preguntas cargadas en el servidor para cada materia.</li>
+                            <li>historial de los exámenes realizados y reporte de errores/aciertos.</li>
+                            <li>conexión con el bot del servidor para mejorar aprendizaje.</li>
+                            <li>lector de códigos QR integrado para conectar con Studyall <i>Link</i>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="column is-12-mobile is-6-tablet is-6-desktop has-border">
+                <span class="detail-title">Explicación Técnica</span>
+                <br>
+                <span class="detail-subtitle">Aplicación Web</span>
+                <br>
+                <ul>
+                    <li>ASP.NET con C#
+                    </li>
+                    <li>Sirve para 2 propósitos:
+                        <ul class="sec-ul">                           
+                            <li>como API para la aplicación móvil,</li>
+                            <li>como panel de administrador.</li>
+                        </ul>
+                    </li>
+                    <li>Conexión con Firebase para enviar notificaciones push.
+                    </li>
+                    <li>Chatbot desarrollado con AIML.
+                    </li>
+                    <li>Servicios Web ASMX para distintas funciones.
+                    </li>
+                    <li>Base de datos en SQL Server.
+                    </li>
+
+                </ul>
+                <span class="detail-subtitle">Aplicación Móvil</span>
+                <br>
+                <ul>
+                    <li>Aplicación nativa desarrollada con Android Studio
+                    </li>
+                    <li>Lector de códigos QR integrado dentro de la aplicación.
+                    </li>
+                    <li>Función para descargar archivos desde el servidor y descomprimir, para la instalación de los paquetes de materias/tópicos.
+                    </li>                   
+                    <li>Integración fon Firebase para recibir notificaciones push.
+                    </li>
+                    <li>Comunicación con el servidor a través de SOAP.
+                    </li>
+                    <li>Integración con SQL Lite para almacenar datos del usuario.
+                    </li>
+                </ul>
+                <span class="detail-subtitle">Tecnologías Utilizadas</span>
+                <br>
+                <div style="margin-top:5px">
+                        <img src="../images/tech/aspnet.png" width="75px">               
+                        <img src="../images/tech/sqlserver.png" width="75px">
+                        <img src="../images/tech/androidstudio.png" width="75px"> 
+                        <img src="../images/tech/materialize.png" width="75px"> 
+                        <img src="../images/tech/firebase.png" width="75px">
+                </div>
+            </div>
+        </div>
+        <div class="has-text-centered">
+            <span class="detail-title">Imagenes del Proyecto:</span>
+            <br>
+        </div>
+        <div class="slider" style="max-width:700px">
+            <img class="mySlides animation" src="../images/studyall/screenshots/1.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/2.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/3.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/4.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/5.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/6.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/7.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/8.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/9.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/10.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/11.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/12.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/13.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/14.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/15.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/16.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/17.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/18.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/19.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/20.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/studyall/screenshots/21.jpg" style="width:100%">
+            <div class="left slider-arrow" onclick="plusDivs(-1); resetTimer()">&#10094;</div>
+            <div class="right slider-arrow" onclick="plusDivs(1); resetTimer()">&#10095;</div>
+
+            <div class="badges-container" style="width:100%">
+                <span class="badge" onclick="currentDiv(1); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(2); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(3); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(4); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(5); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(6); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(7); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(8); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(9); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(10); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(11); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(12); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(13); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(14); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(15); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(16); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(17); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(18); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(19); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(20); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(21); resetTimer()"></span>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="has-text-centered" style="margin-bottom:23px">
+            <h3 class="title is-5">Contacto: &nbsp;&nbsp;<img width="20px" src="../images/tech/gmail.png"></img> <i><a href="mailto:eduort11@gmail.com">eduort11@gmail.com</a><br> </i></h3> 
+    </div>
+
+    <script src="../js/slider.js"></script>
+
+</body>
+
+</html>

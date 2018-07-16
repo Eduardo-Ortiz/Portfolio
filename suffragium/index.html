@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Suffragium - Eduardo Ortiz</title>
+    <meta name="description" content="Portafolio de proyectos de Eduardo Ortiz Muñoz">
+    <meta name="author" content="Eduardo Ortiz Muñoz">
+
+    <link rel="stylesheet" href="../css/bulma.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar is-black">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">          
+              <img src="../images/languages/home.png" alt="" style="height:20px">&nbsp;Inicio
+            </a>
+            <a style="position:absolute; right:75px;" class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">
+              <img style="margin-top:5px" src="../images/languages/mexico.png" alt="">&nbsp;<span style="margin-top:3px">ES</span>
+            </a>
+            <a style="position:absolute; right:0px;" class="navbar-item" href="https://eduardo-ortiz.github.io/Portfolio/">
+              <img style="margin-top:5px" src="../images/languages/usa.png" alt="">&nbsp;<span style="margin-top:3px">EN</span>
+            </a>    
+        </div>
+    </nav>
+    <div style="margin-top:20px" class="container">
+        <div class="logo">
+            <img class="img-logo" src="../images/suffragium/logo.png" width="150px"/><br>
+            <span style="font-size:20px;font-weight:600">Sistema de Encuestas</span>
+        </div>     
+      
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-12-mobile is-6-tablet is-6-desktop">
+                <p style="padding-bottom:6px;padding-top:6px">Suffragium es un sistema creado para <b>realización de encuestas, integrando el uso de dispositivos móviles para la toma de muestras combinado con potentes herramientas de análisis y control</b> para facilitar los procesos y obtener los mejores resultados. </p>
+                <p style="padding-bottom:6px;">Además se incluye un control de trabajadores para poder realizar auditorías, con características como la grabación de voz, limitación del área de trabajo a través del GPS, verificación de la ruta seguida, lugar donde fueron tomadas las muestras, etc.</p>
+                <ul>
+                    <li>
+                        <strong>aplicación web</strong>, con funciones como:
+                        <ul>
+                            <li>dar de alta trabajadores y administradores;</li>      
+                            <li>crear encuestas con preguntas de distintos tipos, selección, abiertas, imágenes;</li>    
+                            <li>mapas con áreas de trabajo en las cuales deben desempeñarse los encuestadores;</li>      
+                            <li>consulta de audios correspondiente a cada muestra tomada para auditoria;</li>   
+                            <li>mapa con la ubicación de los encuestadores en tiempo real y rastreo de su ruta;</li>   
+                            <li>consulta de cada muestra individual, con sus respuestas audio y ubicación;</li>   
+                            <li>visualizador de reportes en forma de gráficas, con opciones para personalizar el tipo de la gráfica, color, entre otros aspectos;</li>     
+                            <li>generador de consultas personalizadas para obtener datos filtrados por zonas geográficas, preguntas específicas, etc;</li>      
+                            <li>historial de acciones realizadas en el sistema;</li>   
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>aplicación móvil para Android</strong>, con funciones que incluyen:
+                        <ul>
+                            <li>administración de las tareas asignadas al trabajador;</li>   
+                            <li>captura de encuestas, incluyendo grabación del audio;</li>          
+                            <li>mapa con el área en la que se deben recopilar las muestras;</li>    
+                            <li>utilización de GPS para verificar que se recopilan muestras en el área asignada;</li>    
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="column is-12-mobile is-6-tablet is-6-desktop has-border">
+                <span class="detail-title">Explicación Técnica</span>
+                <br>
+                <span class="detail-subtitle">Aplicación Web</span>
+                <br>
+                <ul>
+                    <li>Aplicación Web Laravel
+                    </li>
+                    <li>Sirve para 2 propósitos:
+                        <ul class="sec-ul">                           
+                            <li>como API para la aplicación móvil,</li>
+                            <li>como panel de administrador.</li>
+                        </ul>
+                    </li>
+                    <li>Utilización de Vue.js en el front end para distintas aplicaciones.
+                    </li>   
+                    <li>Integración con Google Maps API para dibujar y almacenar polígonos y ubicaciones.
+                    </li>   
+                    <li>Servicios REST para comunicación con la aplicación móvil.
+                    </li>                   
+                    <li>Base de datos en MySQL.
+                    </li>
+
+                </ul>
+                <span class="detail-subtitle">Aplicación Móvil</span>
+                <br>
+                <ul>
+                    <li>Aplicación nativa desarrollada con Android Studio
+                    </li>                  
+                    <li>Comunicación con el servidor a través de REST con la librería <i>Retrofit</i>.
+                    </li>                   
+                    <li>Integración con SQL Lite para almacenar datos de las muestras tomadas.
+                    </li>
+                    <li>Utilización de GPS para mantener control de ubicación y tracking en tiempo real/ruta seguida.
+                    </li>
+                    <li>Integración con Google Maps.
+                        </li>
+                </ul>
+                <span class="detail-subtitle">Tecnologías Utilizadas</span>
+                <br>
+                <div style="margin-top:5px">                       
+                        <img src="../images/tech/laravel.png" width="75px">
+                        <img src="../images/tech/vuejs.png" width="75px">        
+                        <img src="../images/tech/mysql.png" width="75px">    
+                        <img src="../images/tech/androidstudio.png" width="75px"> 
+                        <img src="../images/tech/bootstrap.png" width="75px">   
+                        <img src="../images/tech/googlemaps.png" width="75px"> 
+                        <img src="../images/tech/firebase.png" width="75px"> 
+                </div>
+            </div>
+        </div>
+        <div class="has-text-centered">
+            <span class="detail-title">Imagenes del Proyecto:</span>
+            <br>
+        </div>
+        <div class="slider" style="max-width:700px">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/1.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/2.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/3.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/4.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/5.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/6.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/7.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/8.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/9.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/10.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/11.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/12.jpg" style="width:100%">     
+            <img class="mySlides animation" src="../images/suffragium/screenshots/13.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/14.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/15.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/16.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/17.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/18.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/19.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/suffragium/screenshots/20.jpg" style="width:100%">         
+            <img class="mySlides animation" src="../images/suffragium/screenshots/21.jpg" style="width:100%">        
+            <div class="left slider-arrow" onclick="plusDivs(-1); resetTimer()">&#10094;</div>
+            <div class="right slider-arrow" onclick="plusDivs(1); resetTimer()">&#10095;</div>
+
+            <div class="badges-container" style="width:100%">
+                <span class="badge" onclick="currentDiv(1); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(2); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(3); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(4); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(5); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(6); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(7); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(8); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(9); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(10); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(11); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(12); resetTimer()"></span>   
+                <span class="badge" onclick="currentDiv(13); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(14); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(15); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(16); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(17); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(18); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(19); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(20); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(21); resetTimer()"></span>                     
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="has-text-centered" style="margin-bottom:23px">
+            <h3 class="title is-5">Contacto: &nbsp;&nbsp;<img width="20px" src="../images/tech/gmail.png"></img> <i><a href="mailto:eduort11@gmail.com">eduort11@gmail.com</a><br> </i></h3> 
+    </div>
+      
+    <script src="../js/slider.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Ordenus - Eduardo Ortiz</title>
+    <meta name="description" content="Portafolio de proyectos de Eduardo Ortiz Muñoz">
+    <meta name="author" content="Eduardo Ortiz Muñoz">
+
+    <link rel="stylesheet" href="../css/bulma.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar is-black">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">          
+              <img src="../images/languages/home.png" alt="" style="height:20px">&nbsp;Inicio
+            </a>
+            <a style="position:absolute; right:75px;" class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">
+              <img style="margin-top:5px" src="../images/languages/mexico.png" alt="">&nbsp;<span style="margin-top:3px">ES</span>
+            </a>
+            <a style="position:absolute; right:0px;" class="navbar-item" href="https://eduardo-ortiz.github.io/Portfolio/">
+              <img style="margin-top:5px" src="../images/languages/usa.png" alt="">&nbsp;<span style="margin-top:3px">EN</span>
+            </a>    
+        </div>
+    </nav>
+    <div style="margin-top:20px" class="container">
+        <div class="logo">
+            <img class="img-logo" src="../images/ordenus/logo.png" width="150px"/><br>
+            <span style="font-size:20px;font-weight:600">Ordena en Restaurantes Facil y Rapido</span>
+        </div>     
+      
+        <div class="columns is-mobile is-multiline">
+            <div class="column is-12-mobile is-6-tablet is-6-desktop">
+                <p style="padding-bottom:6px;padding-top:6px">Ordenus es un <b>sistema diseñado para facilitar el proceso de ordenar en los restaurantes.</b> Esto se logra a través de una aplicación móvil que permite a los clientes ver el menú, con fotos y detalles de cada platillo desde el cual pueden hacer su pedido.</p>
+                <p style="padding-bottom:6px;">Los pedidos serán mostrados en una aplicación destinada a la cocina, en la cual se podrán visualizar y ordenar de una manera sencilla todas las ordenes con distintos detalles como hace cuanto se recibió, de que mesa viene, entre otros.</p>
+                <ul>
+                    <li>
+                        <strong>aplicación de escritorio</strong>, con funciones como:
+                        <ul>
+                            <li>recibir pedidos de los clientes;</li>      
+                            <li>calculo del tiempo de proceso que tomara llevar a cabo cada orden;</li>    
+                            <li>función para mantener un control de las ordenes que llevan más tiempo en espera a través de alertas con colores y tiempos;</li>    
+                            <li>capacidad para ver el detalle de las ordenes, con la cantidad de cada platillo, las notas incluidas, la mesa de la que viene y el número de orden;</li>                                      
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>aplicación móvil para Android</strong>, con funciones que incluyen:
+                        <ul>
+                            <li>configuración para asignar la aplicación a una mesa del restaurante</li>   
+                            <li>escáner de código de barras para manejo de las cuentas;</li>          
+                            <li>desplegado del menú del restaurante con imágenes, descripciones y precios;</li>     
+                            <li>carrito de compra para agregar elementos y generar el pedido;</li>      
+                            <li>función para agregar notas o comentarios al pedido de cada producto;</li>    
+                            <li>historial de todos los pedidos realizados durante la orden en cuestión;</li>         
+                            <li>resumen del total de la cuenta con detalle de todo lo ordenado;</li>    
+                            <li>desplegado de notificaciones para avisar cuando la orden del cliente ha sido marcada como completada en la cocina;</li>                       
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="column is-12-mobile is-6-tablet is-6-desktop has-border">
+                <span class="detail-title">Explicación Técnica</span>
+                <br>
+                <span class="detail-subtitle">Aplicación de Escritorio</span>
+                <br>
+                <ul>
+                    <li>Aplicación Java con Maven
+                    </li>
+                    <li>Sirve para 2 propósitos:
+                        <ul class="sec-ul">                           
+                            <li>como API para la aplicación móvil,</li>
+                            <li>como panel para desplegar ordenes en la cocina.</li>
+                        </ul>
+                    </li>
+                    <li>Conexión con Firebase para enviar notificaciones push.
+                    </li>   
+                    <li>Servicios REST a través de la libería Jersey.
+                    </li>                   
+                    <li>Base de datos en MySQL.
+                    </li>
+
+                </ul>
+                <span class="detail-subtitle">Aplicación Móvil</span>
+                <br>
+                <ul>
+                    <li>Aplicación nativa desarrollada con Android Studio
+                    </li>
+                    <li>Lector de códigos de barra integrado dentro de la aplicación.
+                    </li>                                  
+                    <li>Integración fon Firebase para recibir notificaciones push.
+                    </li>
+                    <li>Comunicación con el servidor a través de REST con la librería <i>Retrofit</i>.
+                    </li>
+                    <li>Integración de la librería <i>Picasso</i> para manejo eficiente de imagenes.
+                    </li>
+                    <li>Integración con SQL Lite para almacenar datos del usuario.
+                    </li>
+                </ul>
+                <span class="detail-subtitle">Tecnologías Utilizadas</span>
+                <br>
+                <div style="margin-top:5px">
+                        <img src="../images/tech/maven.png" width="75px">
+                        <img src="../images/tech/java.png" width="75px">        
+                        <img src="../images/tech/androidstudio.png" width="75px">
+                        <img src="../images/tech/mysql.png" width="75px">
+                        <img src="../images/tech/firebase.png" width="75px">
+                </div>
+            </div>
+        </div>
+        <div class="has-text-centered">
+            <span class="detail-title">Imagenes del Proyecto:</span>
+            <br>
+        </div>
+        <div class="slider" style="max-width:700px">
+            <img class="mySlides animation" src="../images/ordenus/screenshots/1.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/ordenus/screenshots/2.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/ordenus/screenshots/3.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/ordenus/screenshots/4.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/ordenus/screenshots/5.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/ordenus/screenshots/6.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/ordenus/screenshots/7.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/ordenus/screenshots/8.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/ordenus/screenshots/9.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/ordenus/screenshots/10.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/ordenus/screenshots/11.jpg" style="width:100%">
+            <img class="mySlides animation" src="../images/ordenus/screenshots/12.jpg" style="width:100%">           
+            <div class="left slider-arrow" onclick="plusDivs(-1); resetTimer()">&#10094;</div>
+            <div class="right slider-arrow" onclick="plusDivs(1); resetTimer()">&#10095;</div>
+
+            <div class="badges-container" style="width:100%">
+                <span class="badge" onclick="currentDiv(1); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(2); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(3); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(4); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(5); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(6); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(7); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(8); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(9); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(10); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(11); resetTimer()"></span>
+                <span class="badge" onclick="currentDiv(12); resetTimer()"></span>                        
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="has-text-centered" style="margin-bottom:23px">
+            <h3 class="title is-5">Contacto: &nbsp;&nbsp;<img width="20px" src="../images/tech/gmail.png"></img> <i><a href="mailto:eduort11@gmail.com">eduort11@gmail.com</a><br> </i></h3> 
+    </div>
+      
+    <script src="../js/slider.js"></script>
+</body>
+
+</html>

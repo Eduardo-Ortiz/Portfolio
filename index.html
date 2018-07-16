@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Portafolio - Eduardo Ortiz</title>
+  <meta name="description" content="Portafolio de proyectos de Eduardo Ortiz Muñoz">
+  <meta name="author" content="Eduardo Ortiz Muñoz">
+
+  <link rel="stylesheet" href="css/bulma.min.css">
+
+  <style>
+    .profile-pic {
+      box-shadow: 0px 4px 6px 2px lightgrey;
+      border-radius: 50%;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    .row-grey {
+      background-color: #E0E0E0;
+      -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+      clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+      padding: 40px 10px;
+    }
+    .row-white {
+      padding: 15px 10px;
+    }
+    .project-subtitle {
+      padding: 6px 0 6px; 
+      font-size:16px;
+      font-weight: 600;
+    }
+    .project-text {
+      font-size:13px
+    }   
+    .img-logo{
+      width: 135px;      
+    }
+
+
+    @media(max-width: 1280px) {
+      .project-text {
+        font-size: 12px;
+      }
+    }
+
+    @media(max-width: 1087px) {
+      .inverse {
+        flex-direction: column-reverse;
+        display: flex;
+      }
+      .logo {
+        text-align: center;
+      }
+      .img-logo{
+        width: 170px;  
+        margin-bottom: 5px;    
+      }
+      .row-grey {
+        padding-right: 25px;
+        padding-left: 25px;    
+      }
+      .row-white {
+        padding-right: 25px;
+        padding-left: 25px;    
+      }
+    }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<nav class="navbar is-black">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">          
+          <img src="images/languages/home.png" alt="" style="height:20px">&nbsp;Home
+        </a>
+        <a style="position:absolute; right:75px;" class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">
+          <img style="margin-top:5px" src="images/languages/mexico.png" alt="">&nbsp;<span style="margin-top:3px">ES</span>
+        </a>
+        <a style="position:absolute; right:0px;" class="navbar-item" href="https://eduardo-ortiz.github.io/Portfolio/">
+          <img style="margin-top:5px" src="images/languages/usa.png" alt="">&nbsp;<span style="margin-top:3px">EN</span>
+        </a>    
+    </div>
+   
+</nav>
+<body>
+    <div class="row-white has-text-centered">
+      <h1 class="title">Eduardo Ortiz</h1>
+      <h3 style="margin-top:-20px;font-size:22px">Computer Systems Engineer</h4>
+      <h5 style="font-size:15px;margin-top:3px">Full Stack Web/Mobile Developer</h4>
+    </div>
+    <div class="row-grey">
+        <div class="container">
+          <div class="columns is-mobile is-multiline" style="margin-bottom:-10px">
+            <div class="column is-12-mobile is-12-tablet is-4-desktop">
+              <div class="logo">
+                  <img class="img-logo" src="images/suffragium/logo.png">
+              </div>                
+                <h4 class="project-subtitle">Surveys System</h4>
+                <span class="project-text">Includes functions like different types of questions, audio recording for verifications, capture of locations and integration with Google Maps to assign work areas and pollsters monitoring. Contains reporting tools to make custom graphs and even an user-friendly query generator to analyze obtained results.</span>
+                <h4 class="project-subtitle">Used Technology</h4>
+                <span class="project-text">Laravel was used in the backend and Vue.js in the frontend. The mobile application was developed using Android Studio (Java). The communication between both sides was done with a REST API. For the integration with maps, the Google Maps API was used, and at last Firebase was included for the notifications.</span>
+            </div>    
+            <div class="column is-12-mobile is-12-tablet is-8-desktop has-text-centered">
+                <img src="images/suffragium/preview.png">
+            </div>            
+          </div>
+          <div class="has-text-centered">              
+              <img src="images/tech/laravel.png" width="75px">
+              <img src="images/tech/vuejs.png" width="75px">        
+              <img src="images/tech/mysql.png" width="75px">    
+              <img src="images/tech/androidstudio.png" width="75px"> 
+              <img src="images/tech/bootstrap.png" width="75px">   
+              <img src="images/tech/googlemaps.png" width="75px"> 
+              <img src="images/tech/firebase.png" width="75px"> 
+          </div> 
+          <div class="has-text-centered" style="margin-top:15px">
+              <a href="suffragium" class="button is-black is-medium">More Information</a>
+          </div>         
+        </div>
+    </div>
+    <div class="row-white">
+        <div class="container">
+            <div class="columns is-mobile is-multiline inverse" style="margin-bottom:-10px">
+              <div class="column is-12-mobile is-12-tablet is-8-desktop has-text-centered">
+                  <img src="images/ordenus/preview.png">
+              </div> 
+              <div class="column is-12-mobile is-12-tablet is-4-desktop ">
+                <div class="logo">
+                    <img src="images/ordenus/logo.png" class="img-logo">
+                </div>                
+                <h4 class="project-subtitle">Easy and Quick way to order in Restaurants</h4>
+                <span class="project-text">System designed for restaurants, its principal objetive is to digitalize the restaurant's menu to show ti to the customers in a quickest and simplest way, besides allowing to make their order from a mobile device that will be connected to a system in the kitchen to agilize the process.</span>
+                <h4 class="project-subtitle">Used Technology</h4>
+                <span class="project-text">The server is a Java Maven application with the Jersey library. The mobile application was developed using Android Studio (Java). The communication between the two parts is made through a REST API.</span>
+            </div>    
+                       
+          </div>
+          <div class="has-text-centered">
+              <img src="images/tech/maven.png" width="75px">
+              <img src="images/tech/java.png" width="75px">        
+              <img src="images/tech/androidstudio.png" width="75px">
+              <img src="images/tech/mysql.png" width="75px">
+              <img src="images/tech/firebase.png" width="75px">
+          </div> 
+          <div class="has-text-centered" style="margin-top:15px">
+              <a href="ordenus" class="button is-black is-medium">More Information</a>
+          </div>         
+        </div>
+    </div>
+    <div class="row-grey">
+      <div class="container">
+          <div class="columns is-mobile is-multiline" style="margin-bottom:-10px">
+            <div class="column is-12-mobile is-12-tablet is-4-desktop ">
+              <div class="logo">
+                  <img src="images/heugen/logo.png" class="img-logo">
+              </div>             
+              <h4 class="project-subtitle">Intelligent Study</h4>
+              <span class="project-text">Heugen is a Web application designed to make easier the task of memorizing contents or concepts. To achieve this, an evaluation and repetition technique is used with an algorithm that analyzes and gives priority to the contents that should be studied more, based on the results obtained by the user.</span>
+              <h4 class="project-subtitle">Used Technology</h4>
+              <span class="project-text">The Laravel framework was used in the backend and Vue.js in the frontend. The decision algorithms were written using PHP. As for the database, MySQL is used.</span>
+          </div>    
+          <div class="column is-12-mobile is-12-tablet is-8-desktop has-text-centered">
+              <img src="images/heugen/preview.png">
+          </div>            
+        </div>
+        <div class="has-text-centered">
+            <img src="images/tech/php.png" width="75px">
+            <img src="images/tech/laravel.png" width="75px">
+            <img src="images/tech/vuejs.png" width="75px">        
+            <img src="images/tech/mysql.png" width="75px">    
+            <img src="images/tech/bulma.png" width="75px">       
+        </div> 
+        <div class="has-text-centered" style="margin-top:15px">
+            <a href="heugen" class="button is-black is-medium">More Information</a>
+        </div>         
+      </div>
+    </div>
+    <div class="row-white">
+        <div class="container">
+            <div class="columns is-mobile is-multiline inverse" style="margin-bottom:-10px">
+              <div class="column is-12-mobile is-12-tablet is-8-desktop has-text-centered">
+                  <img src="images/testidy/preview.png">
+              </div> 
+            <div class="column is-12-mobile is-12-tablet is-4-desktop ">
+                <div class="logo">
+                  <img src="images/testidy/logo.png" class="img-logo">
+                </div>
+                <h4 class="project-subtitle">Improved School Control</h4>
+                <span class="project-text">Platform designed for the Faculty of Mechanical and Electrical Engineering North Unit of Monclova, Coahuila Mexico. It integrates a web system and a mobile application to control the asistance of students through QR codes, in addition to managing schedules, tests and other aspects.</span>
+                <h4 class="project-subtitle">Used Technology</h4>
+                <span class="project-text">ASP.NET was used with C # in the backend and jQuery in the frontend. The mobile application was created with Android Studio (Java). The communication between both sides was done through Web Services with SOAP. SQL Server was used for the database.</span>
+            </div>    
+                       
+          </div>
+          <div class="has-text-centered">
+              <img src="images/tech/aspnet.png" width="75px">
+              <img src="images/tech/jquery.png" width="75px">
+              <img src="images/tech/sqlserver.png" width="75px">
+              <img src="images/tech/androidstudio.png" width="75px">
+              <img src="images/tech/firebase.png" width="75px">
+          </div> 
+          <div class="has-text-centered" style="margin-top:15px">
+              <a href="testidy" class="button is-black is-medium">More Information</a>
+          </div>         
+        </div>
+      </div>
+      <div class="row-grey">
+          <div class="container">
+              <div class="columns is-mobile is-multiline" style="margin-bottom:-10px">
+                <div class="column is-12-mobile is-12-tablet is-4-desktop ">
+                  <div class="logo">
+                    <img src="images/studyall/logo.png" class="img-logo">
+                  </div>
+                  <h4 class="project-subtitle">Contents Platform</h4>
+                  <span class="project-text">System created to manage contents or topics of study. These contents are organized in downloadable packages, and may include exams, questions, texts, etc. Also  a chatbot it included,that can be trained to solve questions of any topic and help in the study ambit even more.</span>
+                  <h4 class="project-subtitle">Used Technology</h4>
+                  <span class="project-text">The server uses ASP.NET with C #. The mobile application was created with Android Studio (Java). The communication between both parties is done through Web Services with SOAP. For the database, SQL Server was used. The chatbot works using the AIML language.</span>
+              </div>    
+              <div class="column is-12-mobile is-12-tablet is-8-desktop has-text-centered">
+                  <img src="images/studyall/preview.png">
+              </div>            
+            </div>
+            <div class="has-text-centered">
+                <img src="images/tech/aspnet.png" width="75px">               
+                <img src="images/tech/sqlserver.png" width="75px">
+                <img src="images/tech/androidstudio.png" width="75px"> 
+                <img src="images/tech/materialize.png" width="75px"> 
+                <img src="images/tech/firebase.png" width="75px">
+            </div> 
+            <div class="has-text-centered" style="margin-top:15px">
+                <a href="studyall" class="button is-black is-medium">More Information</a>
+            </div>         
+          </div>
+        </div>
+       
+        
+    <div class="row-white has-text-centered" style="margin-bottom:15px">
+        <h3 style="margin-bottom:5px" class="title is-4">Tools I Use</h3>
+        <div class="has-text-centered" style="margin-bottom:-20px">
+            <img src="images/tech/git.png" width="120px">               
+            <img src="images/tech/vscode.png" width="120px">        
+            <img src="images/tech/phpstorm.png" width="120px">    
+            <img src="images/tech/androidstudiobig.png" width="120px">  
+            <img src="images/tech/netbeans.png" width="120px">       
+            <img src="images/tech/adobe.png" width="120px">                   
+        </div>       
+        <hr>
+      
+        <h3 class="title is-5">Contact: &nbsp;&nbsp;<img width="20px" src="images/tech/gmail.png"></img> <i><a href="mailto:eduort11@gmail.com">eduort11@gmail.com</a><br> </i></h3> 
+       
+    </div>    
+
+</body>
+</html>
