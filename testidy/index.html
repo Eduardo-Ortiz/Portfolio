@@ -19,8 +19,8 @@
 <body>
     <nav class="navbar is-black">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">          
-              <img src="../images/languages/home.png" alt="" style="height:20px">&nbsp;Inicio
+            <a class="navbar-item" href="https://eduardo-ortiz.github.io/Portfolio/">          
+              <img src="../images/languages/home.png" alt="" style="height:20px">&nbsp;Home
             </a>
             <a style="position:absolute; right:75px;" class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">
               <img style="margin-top:5px" src="../images/languages/mexico.png" alt="">&nbsp;<span style="margin-top:3px">ES</span>
@@ -33,84 +33,77 @@
     <div style="margin-top:20px" class="container">
         <div class="logo">
             <img class="img-logo" src="../images/testidy/logo.png" width="150px"/><br>
-            <span style="font-size:20px;font-weight:600">Control Escolar Mejorado</span>
+            <span style="font-size:20px;font-weight:600">Improved School Control</span>
         </div>     
       
         <div class="columns is-mobile is-multiline">
             <div class="column is-12-mobile is-6-tablet is-6-desktop">
                 <p style="padding-bottom:6px;padding-top:6px">
-                    <b>Testidy es una plataforma que facilita el control escolar, principalmente la asistencia. Para eso se
-                        utilizan códigos QR</b> en las aulas que posteriormente son escaneados por los alumnos para confirmar
-                    que están dentro de la clase.</p>
-                <p style="padding-bottom:6px;">Además de esto se incluyen otras funciones adicionales que son útiles para una institución educativa, que
-                    incluyen horarios, practicas, avisos, etc. A continuación se listan las principales características del
-                    proyecto:</p>
+                   <b>Testidy is a platform that facilitates school control, mainly assistance. For that, QR codes are used</b> in the classrooms, that are scanned by the students to confirm that they are inside the classroom.
+                <p style="padding-bottom:6px;">In addition to this, other functions that are useful for an educational institution are included, which include schedules, practices, notices, etc. The following are the main characteristics of the project:</p>
                 <ul>
                     <li>
-                        <strong>aplicación web</strong>, con funciones como:
+                        <strong>web application</strong>, with features like::
                         <ul>
-                            <li>accesos separados para alumnos, maestros y administradores;</li>
-                            <li>registro de laboratorios con generación automática de códigos QR;</li>
-                            <li>función para pase de asistencia durante la hora de clase;</li>
-                            <li>generación de reportes de asistencia en tiempo real;</li>
-                            <li>horarios con detalles para conocer qué clase se lleva a cabo, bajo qué materia, en qué lugar
-                                y con qué maestro;</li>
-                            <li>notificaciones
-                                <i>push</i> para enviar avisos a alumnos específicos, grupos o a toda la escuela;</li>
-                            <li>sistema de exámenes integrado para realizar prácticas durante la hora clase;</li>
-                            <li>… y algunas funciones extra como separar aulas, almacenamiento de archivos, importación de alumnos
-                                y maestros a través de .csv, entre otras.</li>
+                            <li>separate access for students, teachers and administrators;</li>
+                            <li>laboratory registration with automatic generation of QR codes;</li>
+                            <li>function for assistance pass during class time;</li>
+                            <li>generation of assistance reports in real time;</li>
+                            <li>schedules with details to know what class takes place, under what subject, in what place and with what teacher;</li>
+                            <li>push notifications to send notices to specific students, groups or the entire school;</li>
+                            <li>integrated exams system to perform tests during class time;</li>
+                            <li>... and some extra functions such as separating classrooms, file storage, importing students and teachers through .csv files, among others.</li>
                         </ul>
                     </li>
                     <li>
-                        <strong>aplicación móvil para Android</strong>, con funciones que incluyen:
+                        <strong>android application</strong>, with features like:
                         <ul>
-                            <li>escaneo de códigos QR para confirmar asistencia a clases;</li>
-                            <li>acceso directo a la página web de la escuela;</li>
-                            <li>función para solicitar aulas en cualquier fecha y hora disponible;</li>
-                            <li>historial para consultar avisos y notificaciones recibidas.</li>
+                            <li>scanning of QR codes to confirm attendance to classes;</li>
+                            <li>direct access to the school website;</li>
+                            <li>function to request classrooms at any available date and time;</li>
+                            <li>history to check received notifications.</li>
                         </ul>
                     </li>
                 </ul>
             </div>
             <div class="column is-12-mobile is-6-tablet is-6-desktop has-border">
-                <span class="detail-title">Explicación Técnica</span>
+                <span class="detail-title">Tech wrap-up</span>
                 <br>
-                <span class="detail-subtitle">Aplicación Web</span>
+                <span class="detail-subtitle">Web Application</span>
                 <br>
                 <ul>
-                    <li>ASP.NET con C#
+                    <li>ASP.NET with C #
                     </li>
-                    <li>Sirve para 3 propósitos:
+                    <li>Serves 3 purposes at once:
                         <ul class="sec-ul">
-                            <li>como una aplicación web para alumnos y maestros,</li>
-                            <li>como API para la aplicación móvil,</li>
-                            <li>como panel de administrador.</li>
+                            <li>as a web application for students and teachers,</li>
+                            <li>as an API for the mobile application,</li>
+                            <li>as administrator panel.</li>
                         </ul>
                     </li>
-                    <li>Conexión con Firebase para enviar notificaciones push.
+                    <li>Connection with Firebase to send push notifications.
                     </li>
-                    <li>Integración con jQuery para widget de selector de fechas y filtros de búsqueda con las funciones de autocompletar.
+                    <li>Integration with jQuery for date selector widget and search filters with autocomplete functions.
                     </li>
-                    <li>Servicios Web ASMX para distintas funciones.
+                    <li>ASMX Web Services for different functions.
                     </li>
-                    <li>Base de datos en SQL Server.
+                    <li>SQL Server database.
                     </li>
 
                 </ul>
-                <span class="detail-subtitle">Aplicación Móvil</span>
+                <span class="detail-subtitle">Mobile Application</span>
                 <br>
                 <ul>
-                    <li>Aplicación nativa desarrollada con Android Studio
+                    <li>Native application developed with Android Studio
                     </li>
-                    <li>Lector de códigos QR integrado dentro de la aplicación.
+                    <li>QR code reader integrated within the application.
                     </li>
-                    <li>Integración fon Firebase para recibir notificaciones push.
+                    <li>Firebase integration to receive push notifications.
                     </li>
-                    <li>Comunicación con el servidor a través de SOAP.
+                    <li>Communication with the server through SOAP.
                     </li>
                 </ul>
-                <span class="detail-subtitle">Tecnologías Utilizadas</span>
+                <span class="detail-subtitle">Used technologies</span>
                 <br>
                 <div style="margin-top:5px">
                     <img src="../images/tech/aspnet.png" width="75px">
@@ -122,7 +115,7 @@
             </div>
         </div>
         <div class="has-text-centered">
-            <span class="detail-title">Imagenes del Proyecto:</span>
+            <span class="detail-title">Images of the Project:</span>
             <br>
         </div>
         <div class="slider" style="max-width:700px">
@@ -176,7 +169,7 @@
 
     <hr>
     <div class="has-text-centered" style="margin-bottom:23px">
-            <h3 class="title is-5">Contacto: &nbsp;&nbsp;<img width="20px" src="../images/tech/gmail.png"></img> <i><a href="mailto:eduort11@gmail.com">eduort11@gmail.com</a><br> </i></h3> 
+            <h3 class="title is-5">Contact: &nbsp;&nbsp;<img width="20px" src="../images/tech/gmail.png"></img> <i><a href="mailto:eduort11@gmail.com">eduort11@gmail.com</a><br> </i></h3> 
     </div>
 
     <script src="../js/slider.js"></script>

@@ -19,8 +19,8 @@
 <body>
     <nav class="navbar is-black">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">          
-              <img src="../images/languages/home.png" alt="" style="height:20px">&nbsp;Inicio
+            <a class="navbar-item" href="https://eduardo-ortiz.github.io/Portfolio/">          
+              <img src="../images/languages/home.png" alt="" style="height:20px">&nbsp;Home
             </a>
             <a style="position:absolute; right:75px;" class="navbar-item" href="https://eduardo-ortiz.github.io/Portafolio/">
               <img style="margin-top:5px" src="../images/languages/mexico.png" alt="">&nbsp;<span style="margin-top:3px">ES</span>
@@ -33,77 +33,76 @@
     <div style="margin-top:20px" class="container">
         <div class="logo">
             <img class="img-logo" src="../images/ordenus/logo.png" width="150px"/><br>
-            <span style="font-size:20px;font-weight:600">Ordena en Restaurantes Facil y Rapido</span>
+            <span style="font-size:20px;font-weight:600">Easy and Quick way to order in Restaurants</span>
         </div>     
       
         <div class="columns is-mobile is-multiline">
             <div class="column is-12-mobile is-6-tablet is-6-desktop">
-                <p style="padding-bottom:6px;padding-top:6px">Ordenus es un <b>sistema diseñado para facilitar el proceso de ordenar en los restaurantes.</b> Esto se logra a través de una aplicación móvil que permite a los clientes ver el menú, con fotos y detalles de cada platillo desde el cual pueden hacer su pedido.</p>
-                <p style="padding-bottom:6px;">Los pedidos serán mostrados en una aplicación destinada a la cocina, en la cual se podrán visualizar y ordenar de una manera sencilla todas las ordenes con distintos detalles como hace cuanto se recibió, de que mesa viene, entre otros.</p>
+                <p style="padding-bottom:6px;padding-top:6px">Ordenus is a <b>system designed to facilitate the ordering process in restaurants.</b> This is achieved through a mobile application that allows customers to see the menu, with photos and details of each dish, and from it they can make their order.</p>
+                <p style="padding-bottom:6px;">The orders will be displayed in an application for the kitchen, in which all the orders can be displayed and organized in a simple way. This includes different details like from wich table it comes from, the time it was recived, among others.</p>
                 <ul>
                     <li>
-                        <strong>aplicación de escritorio</strong>, con funciones como:
+                        <strong>desktop application</strong>, with features like:
                         <ul>
-                            <li>recibir pedidos de los clientes;</li>      
-                            <li>calculo del tiempo de proceso que tomara llevar a cabo cada orden;</li>    
-                            <li>función para mantener un control de las ordenes que llevan más tiempo en espera a través de alertas con colores y tiempos;</li>    
-                            <li>capacidad para ver el detalle de las ordenes, con la cantidad de cada platillo, las notas incluidas, la mesa de la que viene y el número de orden;</li>                                      
+                            <li>receive orders from customers;</li>      
+                            <li>calculation of the process time it will take to complete each order;</li>    
+                            <li>function to maintain control of the orders that have been waiting the longest through alerts with colors and times;</li>    
+                            <li>ability to see the detail of the orders, with the amount of each dish, the included notes, the table from which it comes and the order number;</li>                                      
                         </ul>
                     </li>
                     <li>
-                        <strong>aplicación móvil para Android</strong>, con funciones que incluyen:
+                        <strong>android application</strong>, with features like:
                         <ul>
-                            <li>configuración para asignar la aplicación a una mesa del restaurante</li>   
-                            <li>escáner de código de barras para manejo de las cuentas;</li>          
-                            <li>desplegado del menú del restaurante con imágenes, descripciones y precios;</li>     
-                            <li>carrito de compra para agregar elementos y generar el pedido;</li>      
-                            <li>función para agregar notas o comentarios al pedido de cada producto;</li>    
-                            <li>historial de todos los pedidos realizados durante la orden en cuestión;</li>         
-                            <li>resumen del total de la cuenta con detalle de todo lo ordenado;</li>    
-                            <li>desplegado de notificaciones para avisar cuando la orden del cliente ha sido marcada como completada en la cocina;</li>                       
+                            <li>configuration to assign the application to a table</li>   
+                            <li>barcode scanner for bill management;</li>          
+                            <li>restaurant menu with images, descriptions and prices;</li>     
+                            <li>shopping cart to add items and generate the order;</li>      
+                            <li>function to add notes or comments to the order of each product;</li>                              
+                            <li>summary of the total of the bill with detail of everything ordered;</li>    
+                            <li>deployed notifications to alert when the customer order has been marked as completed in the kitchen;</li>                       
                         </ul>
                     </li>
                 </ul>
             </div>
             <div class="column is-12-mobile is-6-tablet is-6-desktop has-border">
-                <span class="detail-title">Explicación Técnica</span>
+                <span class="detail-title">Tech wrap-up</span>
                 <br>
-                <span class="detail-subtitle">Aplicación de Escritorio</span>
+                <span class="detail-subtitle">Desktop Application</span>
                 <br>
                 <ul>
-                    <li>Aplicación Java con Maven
+                    <li>Java application with Maven
                     </li>
-                    <li>Sirve para 2 propósitos:
+                    <li>Serves 2 purposes at once:
                         <ul class="sec-ul">                           
-                            <li>como API para la aplicación móvil,</li>
-                            <li>como panel para desplegar ordenes en la cocina.</li>
+                            <li>as API for the mobile app,</li>
+                            <li>as a panel to show the orders in the kitchen.</li>
                         </ul>
                     </li>
-                    <li>Conexión con Firebase para enviar notificaciones push.
+                    <li>Connection with Firebase to send push notifications.
                     </li>   
-                    <li>Servicios REST a través de la libería Jersey.
+                    <li>REST services through the Jersey library.
                     </li>                   
-                    <li>Base de datos en MySQL.
+                    <li>MySQL database.
                     </li>
 
                 </ul>
-                <span class="detail-subtitle">Aplicación Móvil</span>
+                <span class="detail-subtitle">Mobile Application</span>
                 <br>
                 <ul>
-                    <li>Aplicación nativa desarrollada con Android Studio
+                    <li>Native application developed with Android Studio
                     </li>
-                    <li>Lector de códigos de barra integrado dentro de la aplicación.
+                    <li>Bar code reader integrated within the application.
                     </li>                                  
-                    <li>Integración fon Firebase para recibir notificaciones push.
+                    <li>Firebase integration to receive push notifications.
                     </li>
-                    <li>Comunicación con el servidor a través de REST con la librería <i>Retrofit</i>.
+                    <li>Communication with the server through REST using the library Retrofit.
                     </li>
-                    <li>Integración de la librería <i>Picasso</i> para manejo eficiente de imagenes.
+                    <li>Integration of the <i> Picasso </i> library for efficient image management.
                     </li>
-                    <li>Integración con SQL Lite para almacenar datos del usuario.
+                    <li>Integration with SQLite to store user data.
                     </li>
                 </ul>
-                <span class="detail-subtitle">Tecnologías Utilizadas</span>
+                <span class="detail-subtitle">Technologies Used</span>
                 <br>
                 <div style="margin-top:5px">
                         <img src="../images/tech/maven.png" width="75px">
@@ -115,7 +114,7 @@
             </div>
         </div>
         <div class="has-text-centered">
-            <span class="detail-title">Imagenes del Proyecto:</span>
+            <span class="detail-title">Images of the Project:</span>
             <br>
         </div>
         <div class="slider" style="max-width:700px">
@@ -153,7 +152,7 @@
 
     <hr>
     <div class="has-text-centered" style="margin-bottom:23px">
-            <h3 class="title is-5">Contacto: &nbsp;&nbsp;<img width="20px" src="../images/tech/gmail.png"></img> <i><a href="mailto:eduort11@gmail.com">eduort11@gmail.com</a><br> </i></h3> 
+            <h3 class="title is-5">Contact: &nbsp;&nbsp;<img width="20px" src="../images/tech/gmail.png"></img> <i><a href="mailto:eduort11@gmail.com">eduort11@gmail.com</a><br> </i></h3> 
     </div>
       
     <script src="../js/slider.js"></script>
